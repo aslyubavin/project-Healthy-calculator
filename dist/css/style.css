@@ -88,7 +88,7 @@ body {
 
 .title {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .menu {
@@ -195,6 +195,9 @@ body {
   }
 }
 
+.cal-calc {
+  padding-bottom: 50px;
+}
 .cal-calc .title {
   padding-top: 100px;
   text-align: center;
@@ -205,24 +208,12 @@ body {
 }
 .cal-calc__subtitle {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   margin-top: 30px;
 }
 .cal-calc__subtitle:first-child {
   margin-top: 0;
-}
-.cal-calc #gender:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../icons/switch.svg") center center/cover no-repeat;
 }
 .cal-calc__choose {
   position: relative;
@@ -246,24 +237,27 @@ body {
           justify-content: center;
   width: 170px;
   height: 50px;
+  margin: 0 10px;
   padding: 0 10px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   border: none;
+  border-radius: 15px;
   text-align: center;
   font-size: 14px;
   cursor: pointer;
-  outline: none;
+  outline: 1px solid rgba(70, 70, 70, 0.1);
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .cal-calc__choose-item_active {
   color: #fff;
+  background: rgba(65, 65, 65, 0.8);
 }
 .cal-calc__choose_medium {
-  width: 743px;
+  width: 740px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -300,8 +294,17 @@ body {
 }
 .cal-calc__result {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cal-calc__result span {
   font-size: 42px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

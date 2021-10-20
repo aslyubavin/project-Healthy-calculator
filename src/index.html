@@ -34,32 +34,24 @@
                         <div class="cal-calc__choose-item cal-calc__choose-item_active" id="female">Женщина</div>
                         <div class="cal-calc__choose-item" id="male">Мужчина</div>
                     </div>
-    
                     <div class="cal-calc__subtitle">
                         Ваша конституция
                     </div>
                     <div class="cal-calc__choose cal-calc__choose_medium">
-                        <input type="text" id="height" placeholder="Введите рост" class="cal-calc__choose-item">
-                        <input type="text" id="weight" placeholder="Введите вес"  class="cal-calc__choose-item">
-                        <input type="text" id="age" placeholder="Введите возраст" class="cal-calc__choose-item">
+                        <input class="cal-calc__choose-item" id="height" type="number" placeholder="Введите рост, см">
+                        <input class="cal-calc__choose-item" id="weight" type="number" placeholder="Введите вес, кг">
+                        <input class="cal-calc__choose-item" id="age" type="number" placeholder="Введите возраст, лет">
                     </div>
-    
-                    <div class="cal-calc__subtitle">
-                        Выберите вашу физическая активность
-                    </div>
+                    <div class="cal-calc__subtitle">Выберите вашу физическая активность</div>
                     <div class="cal-calc__choose cal-calc__choose_big">
-                        <div data-ratio="1.2" id="low" class="cal-calc__choose-item">Низкая активность </div>
-                        <div data-ratio="1.375" id="small"  class="cal-calc__choose-item cal-calc__choose-item_active">Невысокая активность</div>
-                        <div data-ratio="1.55" id="medium" class="cal-calc__choose-item">Умеренная активность</div>
-                        <div data-ratio="1.725" id="high" class="cal-calc__choose-item">Высокая активность</div>
+                        <div class="cal-calc__choose-item" data-ratio="1.2" id="low">Низкая активность </div>
+                        <div class="cal-calc__choose-item cal-calc__choose-item_active" data-ratio="1.375" id="small">Невысокая активность</div>
+                        <div class="cal-calc__choose-item" data-ratio="1.55" id="medium">Умеренная активность</div>
+                        <div class="cal-calc__choose-item" data-ratio="1.725" id="high">Высокая активность</div>
                     </div>
-    
                     <div class="cal-calc__divider"></div>
-    
                     <div class="cal-calc__total">
-                        <div class="cal-calc__subtitle">
-                            Ваша суточная норма калорий:
-                        </div>
+                        <div class="cal-calc__subtitle">Ваша суточная норма калорий:</div>
                         <div class="cal-calc__result">
                             <span>2700</span> ккал
                         </div>
@@ -68,6 +60,7 @@
             </div>
         </section>
     </div>
+
     <script src="js/script.min.js"></script>
 </body>
 </html>
