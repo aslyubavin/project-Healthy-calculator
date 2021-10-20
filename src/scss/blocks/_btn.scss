@@ -1,0 +1,17 @@
+.btn {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+    width: 380px;
+    height: 120px;
+    padding: 18px 32px;
+    border-radius: 28px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fff;
+}
