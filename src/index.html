@@ -31,19 +31,19 @@
                 <div class="cal-calc__field">
                     <div class="cal-calc__subtitle">Ваш пол</div>
                     <div class="cal-calc__choose" id="gender">
-                        <div class="cal-calc__choose-item cal-calc__choose-item_active" id="female">Женщина</div>
-                        <div class="cal-calc__choose-item" id="male">Мужчина</div>
+                        <div class="cal-calc__choose-item cal-calc__choose-item_active" data-gender="female">Женщина</div>
+                        <div class="cal-calc__choose-item" data-gender="male">Мужчина</div>
                     </div>
                     <div class="cal-calc__subtitle">
                         Ваша конституция
                     </div>
-                    <div class="cal-calc__choose cal-calc__choose_medium">
-                        <input class="cal-calc__choose-item" id="height" type="number" placeholder="Введите рост, см">
-                        <input class="cal-calc__choose-item" id="weight" type="number" placeholder="Введите вес, кг">
-                        <input class="cal-calc__choose-item" id="age" type="number" placeholder="Введите возраст, лет">
+                    <div class="cal-calc__choose cal-calc__choose_medium" id="constitution">
+                        <input class="cal-calc__choose-item" data-option="height" type="number" placeholder="Введите рост, см">
+                        <input class="cal-calc__choose-item" data-option="weight" type="number" placeholder="Введите вес, кг">
+                        <input class="cal-calc__choose-item" data-option="age" type="number" placeholder="Введите возраст, лет">
                     </div>
                     <div class="cal-calc__subtitle">Выберите вашу физическая активность</div>
-                    <div class="cal-calc__choose cal-calc__choose_big">
+                    <div class="cal-calc__choose cal-calc__choose_big" id="activity">
                         <div class="cal-calc__choose-item" data-ratio="1.2" id="low">Низкая активность </div>
                         <div class="cal-calc__choose-item cal-calc__choose-item_active" data-ratio="1.375" id="small">Невысокая активность</div>
                         <div class="cal-calc__choose-item" data-ratio="1.55" id="medium">Умеренная активность</div>
@@ -60,7 +60,6 @@
             </div>
         </section>
     </div>
-    
 
     <script src="js/script.min.js"></script>
 </body>
