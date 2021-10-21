@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	font-size: 18px;
-	color: #1D1D1F;
+	color: $main-color;
 }
 
 body {
@@ -34,7 +34,10 @@ body {
 
 @import "blocks/btn";
 @import "blocks/title";
+@import "blocks/divider";
 @import "blocks/menu";
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/cal-calc";
+@import "blocks/mass-calc";
+@import "blocks/footer";

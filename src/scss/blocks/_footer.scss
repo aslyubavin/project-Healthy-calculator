@@ -1,0 +1,19 @@
+.footer {
+    &__inner {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        &_cal {
+            background: url("../img/cal_photo.jpg") center (center / cover) no-repeat;
+            color: rgba($color: $main-color, $alpha: 0.9);
+        }
+        &_mass {
+            background: url("../img/mass_photo.jpg") center (center / cover) no-repeat;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}

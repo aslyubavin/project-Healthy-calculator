@@ -100,4 +100,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
     getStaticInfo('#gender', 'cal-calc__choose-item_active');
     getStaticInfo('#activity', 'cal-calc__choose-item_active');
+
 });
