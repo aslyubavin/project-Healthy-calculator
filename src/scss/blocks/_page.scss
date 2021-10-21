@@ -2,11 +2,15 @@
     display: block;
     width: 100%;
     &-cal {
-        opacity: 1;
-        display: block;
+        display: none;
+        &_active {
+            display: block;
+        }
     }
     &-mass {
-        opacity: 1;
         display: none;
+        &_active {
+            display: block;
+        }
     }
 }
